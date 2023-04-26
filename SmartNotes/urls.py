@@ -10,6 +10,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('home', views.home),
     path('currentTime', views.currentTime),
+    path('authCheck', views.authCheck),
     # path('', views.default),
     # path('', include(App1.urls))
 ]
