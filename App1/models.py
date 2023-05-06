@@ -8,3 +8,11 @@ class AppInfo(models.Model):
     text = models.TextField(default = "Enter description here")
     userId = models.IntegerField(serialize=True, unique=True)
     createdOn = models.DateTimeField(default=datetime.datetime.now)
+
+
+class StudentInfo(models.Model):
+    studentID = models.IntegerField(unique=True)
+    name = models.TextField()
+    section = models.CharField(max_length=2)
+
+
